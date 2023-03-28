@@ -1,10 +1,11 @@
 import { Image } from 'antd';
 import { Link } from 'react-router-dom';
+import imglogo from '../assets/logo.png'
 function Logo () {
 return (
 <>
 <Link to="/">
-<Image src={( "../assets/logo.png")  } style={{paddingBottom:"8px"}} height={50} preview={false}/>
+<Image src={(imglogo)} style={{paddingBottom:"8px"}} height={50} preview={false}/>
 </Link>
 </>
 );

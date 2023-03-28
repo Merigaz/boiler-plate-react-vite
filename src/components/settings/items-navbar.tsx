@@ -10,12 +10,12 @@ export const items: MenuProps["items"] = [
     icon: <BugFilled />,
   },
   {
-    label: "Poke",
+    label: <Link to="/Poke">Poke</Link>,
     key: "Poke",
     icon: <BugFilled />,
   },
   {
-    label: "/Theme",
+    label: "Theme",
     key: "Theme",
     icon: <BugFilled />,
   }

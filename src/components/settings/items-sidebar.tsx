@@ -2,12 +2,12 @@ import type { MenuProps } from "antd";
 import {BugFilled} from '@ant-design/icons';
 export const items: MenuProps["items"] = [
   {
-    label: "/Tasks",
+    label: "Tasks",
     key: "Tasks",
     icon: <BugFilled />,
   },
   {
-    label: "/Poke",
+    label: "Poke",
     key: "Poke",
     icon: <BugFilled />,
   },

@@ -1,10 +1,6 @@
-
-
 import { useQuery } from "react-query";
 import Pokecard from "../components/Pokecard";
 import getPokemon from "../components/settings/plugins/Useaxios";
-
-
 
 function Poke() {
   const { data, isLoading } = useQuery('pokemon', getPokemon)
@@ -16,7 +12,7 @@ function Poke() {
     return (
       <>
       
-      <Pokecard />
+      <Pokecard {...args}/>
       
       </>
       

@@ -26,7 +26,7 @@ function Home() {
           <Header style={{ backgroundColor: "transparent" }}>
             <Row justify="space-around" align="top">
               <Col span={8}>
-                
+                <Logo/>
               </Col>
               <Col span={16}>
                 <Navbar />
