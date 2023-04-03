@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Info from "../components/Info";
 import Home from "../views/Home";
 import Poke from "../views/Poke";
+import ApiMap from "../views/ApiMap";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/poke",
         element: <Poke />,
+      },
+      {
+        path: "/api-map",
+        element: <ApiMap />
       },
     ],
   },

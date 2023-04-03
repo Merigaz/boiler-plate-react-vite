@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 export const items: MenuProps["items"] = [
   {
-    label: "Tasks",
-    key: "Tasks",
+    label: <Link to="/api-map">ApiMap</Link>,
+    key: "ApiMap",
     icon: <BugFilled />,
   },
   {
