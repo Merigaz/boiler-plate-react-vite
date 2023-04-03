@@ -8,7 +8,6 @@ import Logo from "../components/Logo";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 
-
 function Home() {
   const [siderCollapsed, setsiderCollapsed] = useState(true);
   return (
@@ -26,7 +25,7 @@ function Home() {
           <Header style={{ backgroundColor: "transparent" }}>
             <Row justify="space-around" align="top">
               <Col span={8}>
-                <Logo/>
+                <Logo />
               </Col>
               <Col span={16}>
                 <Navbar />
@@ -49,15 +48,13 @@ function Home() {
               </Col>
             </Row>
             <Layout style={{ backgroundColor: "transparent", padding: "36px" }}>
-              <Content >
+              <Content>
                 <Suspense fallback={<Spin />}>
                   <Outlet />
                 </Suspense>
               </Content>
 
-              <Footer
-                style={{ backgroundColor: "transparent" }}
-              ></Footer>
+              <Footer style={{ backgroundColor: "transparent" }}></Footer>
             </Layout>
           </Layout>
         </Layout>
@@ -66,5 +63,4 @@ function Home() {
   );
 }
 
-
-export default Home
+export default Home;

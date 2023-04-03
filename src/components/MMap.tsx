@@ -12,7 +12,7 @@ function MMap() {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyAyQEEf2zRF4VVGWRV1PmsI3sG5H6DOoh4">
+    <LoadScript googleMapsApiKey="">
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
