@@ -11,7 +11,7 @@ function ApiMap() {
     async function fetchCoordinates()  {
      
       const { data} = await postAddress ();
-      console.log (data);
+      
     }
     fetchCoordinates();
 }, []);
