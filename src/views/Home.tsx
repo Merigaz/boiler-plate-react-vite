@@ -7,6 +7,7 @@ import imageUrl from "../assets/backgroundImage.png";
 import Logo from "../components/Logo";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import { LoadScript } from "@react-google-maps/api";
 
 function Home() {
   const [siderCollapsed, setsiderCollapsed] = useState(true);
@@ -50,7 +51,9 @@ function Home() {
             <Layout style={{ backgroundColor: "transparent", padding: "36px" }}>
               <Content>
                 <Suspense fallback={<Spin />}>
+                <LoadScript googleMapsApiKey={import.meta.env.VITE_API_KEY}>
                   <Outlet />
+                  </LoadScript>
                 </Suspense>
               </Content>
 
