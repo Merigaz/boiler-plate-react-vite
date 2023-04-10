@@ -16,7 +16,7 @@ function MMap() {
 
     geocoder.geocode({ address }, (results, status) => {
   
-      if (status == google.maps.GeocoderStatus.OK) {
+      if (status == google.maps.GeocoderStatus.OK && results != null) {
   
         console.log(`Address ${index}: ${results[0].formatted_address}`);
   
